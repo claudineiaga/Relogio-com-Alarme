@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #d9dcb2;
+}
+.hide {
+    display: none;
+}
+.wrapper{
+    background-color: #06262c;
+    width: 90%;
+    max-width: 27.25em;
+    padding: 3.12em 5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+}
+.relogio{
+    color: #e2e2ec;
+    font-size: 2.18em;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(44, 105, 154, 0.93);
+    padding: 10px 30px;
+    font-family: "Roboto Mono", monospace;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.inputs input{
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid #000000;
+    border-radius: 0.3em;
+    padding: 0.4em 0.2em;
+}
+#set{
+    background-color: #3292f2;
+    border: none;
+    padding: 1em 2em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 0.2em;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.alarme{
+    color: #ffffff;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #898f9b;
+    padding-bottom: 0.6em;
+}
+.alarme input[type="checkbox"]{
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #e2e2ec;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.alarme input[type="checkbox"]:before{
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+}
+.alarme input[type="checkbox"]:checked{
+    background-color: #d2e2ff;
+}
+.alarme input[type="checkbox"]:checked:before{
+    background-color: #377dff;
+    left: 2em;
+}
+.deleteButton{
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #b1bccf;
+    border: none;
+    cursor: pointer;
+}

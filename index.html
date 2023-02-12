@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meu Alarme</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="relogio">00:00:00</div>
+            <div class="container">
+                <div class="inputs">
+                    <input type="number" id="horaInput" placeholder="00" min="0" max="23" />
+                    <input type="number" id="minutoInput" placeholder="00" min="0" max="59"/>
+                </div>
+                <button id="set">Criar Alarme</button>
+                <div class="alarmeAtivo"></div>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
